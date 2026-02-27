@@ -1,7 +1,16 @@
-function catalogApp() {
-  return {
-    items: [],
+document.addEventListener("alpine:init", () => {
+  Alpine.data("catalogApp", () => ({
+
+    /*     let state = {
     search: "",
+    category: "all",
+    reference: "all",
+    page: 1,
+    pageSize: 20
+  }; */
+
+    search: "",
+    items: [],
 
     async init() {
       const res = await fetch("catalog.json");
@@ -9,10 +18,12 @@ function catalogApp() {
     },
 
     get filteredItems() {
+      const term = this.search.toLowerCase();
+
       return this.items.filter(item =>
-        item.name.toLowerCase().includes(this.search.toLowerCase()) ||
-        item.description.toLowerCase().includes(this.search.toLowerCase())
+        item.name.toLowerCase().includes(term) ||
+        item.description.toLowerCase().includes(term)
       );
     }
-  };
-}
+  }));
+});

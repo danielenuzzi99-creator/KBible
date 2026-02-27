@@ -1,10 +1,50 @@
 [
   {
-    "id": "item-001",
-    "name": "Sample Item",
-    "description": "Short description",
-    "category": "books",
-    "tags": ["design", "ui"],
-    "image": "images/item-001.webp"
+    "name": "Gedan Barai",
+    "description": "Downward sweeping block used to defend against low attacks.",
+    "category": "uke",
+    "kata": "Pinan Nidan"
+  },
+  {
+    "name": "Oi Zuki",
+    "description": "Stepping punch delivered with forward momentum.",
+    "category": "zuki",
+    "kata": "Pinan Nidan"
+  },
+  {
+    "name": "Age Uke",
+    "description": "Rising block to defend against high attacks.",
+    "category": "uke",
+    "kata": "Pinan Nidan"
+  },
+  {
+    "name": "Shuto Uke",
+    "description": "Knife-hand block used for deflecting attacks to the side.",
+    "category": "uke",
+    "kata": "Pinan Nidan"
+  },
+  {
+    "name": "Gyaku Zuki",
+    "description": "Reverse punch executed with the rear hand.",
+    "category": "zuki",
+    "kata": "Pinan Nidan"
+  },
+  {
+    "name": "Mae Geri",
+    "description": "Front kick delivered to the midsection or lower target.",
+    "category": "geri",
+    "kata": "Pinan Nidan"
+  },
+  {
+    "name": "Yoko Uke",
+    "description": "Side block used to redirect lateral attacks.",
+    "category": "uke",
+    "kata": "Pinan Nidan"
+  },
+  {
+    "name": "Kosa Uke",
+    "description": "Crossing block technique used to intercept attacks.",
+    "category": "uke",
+    "kata": "Pinan Nidan"
   }
 ]
