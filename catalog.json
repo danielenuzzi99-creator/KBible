@@ -1,0 +1,10 @@
+[
+  {
+    "id": "item-001",
+    "name": "Sample Item",
+    "description": "Short description",
+    "category": "books",
+    "tags": ["design", "ui"],
+    "image": "images/item-001.webp"
+  }
+]
