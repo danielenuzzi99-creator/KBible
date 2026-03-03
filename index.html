@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8" />
   <title>Catalog</title>
@@ -10,32 +11,51 @@
 
 <body class="bg-gray-100 p-6">
 
-<div 
-  x-data="catalogApp" 
-  x-init="init()"
-  class="max-w-6xl mx-auto"
->
+  <div x-data="catalogApp" x-init="init()" class="max-w-6xl mx-auto">
 
-  <!-- Search -->
-  <input 
-    type="text"
-    x-model="search"
-    placeholder="Search..."
-    class="w-full p-2 mb-4 border rounded"
-  />
+    <!-- Search -->
+    <input type="text" x-model="search" placeholder="Search..." class="w-full p-2 mb-4 border rounded" />
 
-  <!-- Grid -->
-  <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-    <template x-for="item in filteredItems" :key="item.name">
-      <div class="bg-white p-4 rounded shadow">
-        <img :src="item.image" loading="lazy" class="mb-2">
-        <h2 class="font-bold" x-text="item.name"></h2>
-        <p class="text-sm text-gray-600" x-text="item.description"></p>
+    <!-- Filters -->
+    <div class="grid md:grid-cols-2 gap-4 mb-6">
+
+      <!-- Categories (AND logic) -->
+      <div>
+        <h3 class="font-semibold mb-2">Categories</h3>
+        <template x-for="cat in allCategories" :key="cat.id">
+          <label class="flex items-center space-x-2">
+            <input type="checkbox" :value="cat.id" x-model="selectedCategories">
+            <span x-text="cat.name"></span>
+          </label>
+        </template>
       </div>
-    </template>
+
+      <!-- Katas (OR logic) -->
+      <div>
+        <h3 class="font-semibold mb-2">Katas</h3>
+        <template x-for="kata in allKatas" :key="kata.id">
+          <label class="flex items-center space-x-2">
+            <input type="checkbox" :value="kata.id" x-model="selectedKatas">
+            <span x-text="kata.name"></span>
+          </label>
+        </template>
+      </div>
+
+    </div>
+
+    <!-- Grid -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <template x-for="item in filteredItems" :key="item.name">
+        <div class="bg-white p-4 rounded shadow">
+          <img :src="item.image" loading="lazy" class="mb-2">
+          <h2 class="font-bold" x-text="item.name"></h2>
+          <p class="text-sm text-gray-600" x-text="item.description"></p>
+        </div>
+      </template>
+    </div>
+
   </div>
 
-</div>
-
 </body>
+
 </html>

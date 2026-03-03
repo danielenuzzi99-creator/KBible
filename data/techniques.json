@@ -1,0 +1,174 @@
+[
+  {
+    "id": "kentsui-uchi",
+    "name": "Kentsui Uchi",
+    "description": "Colpo discendente eseguito con il pugno a martello.",
+    "image": "images/kentsui-uchi.png",
+    "categories": [
+      "uke"
+    ],
+    "katas": [
+      {
+        "kata": "pinan-nidan",
+        "index": 1
+      }
+    ]
+  },
+  {
+    "id": "oi-zuki",
+    "name": "Oi Zuki",
+    "description": "Pugno portato in avanzamento, coordinato con il passo in avanti.",
+    "categories": [
+      "zuki"
+    ],
+    "katas": [
+      {
+        "kata": "pinan-nidan",
+        "index": 2
+      }
+    ]
+  },
+  {
+    "id": "arai-uke",
+    "name": "Arai Uke",
+    "description": "Parata ampia e spazzata verso il basso per deviare attacchi bassi.",
+    "categories": [
+      "uke"
+    ],
+    "katas": [
+      {
+        "kata": "pinan-nidan",
+        "index": 3
+      }
+    ]
+  },
+  {
+    "id": "age-uke",
+    "name": "Age Uke",
+    "description": "Parata ascendente utilizzata per difendere da attacchi alti.",
+    "categories": [
+      "uke"
+    ],
+    "katas": [
+      {
+        "kata": "pinan-nidan",
+        "index": 4
+      }
+    ]
+  },
+  {
+    "id": "shuto-barai",
+    "name": "Shuto Barai",
+    "description": "Parata spazzata eseguita con la mano a taglio per deviare lateralmente l’attacco.",
+    "image": "images/shuto-barai.png",
+    "categories": [
+      "uke"
+    ],
+    "katas": [
+      {
+        "kata": "pinan-nidan",
+        "index": 5
+      }
+    ]
+  },
+  {
+    "id": "shuto-uke",
+    "name": "Shuto Uke",
+    "description": "Parata con la mano a taglio, impiegata per intercettare o deviare un attacco laterale.",
+    "categories": [
+      "uke"
+    ],
+    "katas": [
+      {
+        "kata": "pinan-shodan",
+        "index": 4
+      }
+    ]
+  },
+  {
+    "id": "gyaku-zuki",
+    "name": "Gyaku Zuki",
+    "description": "Pugno diretto eseguito con il braccio opposto alla gamba avanzata.",
+    "categories": [
+      "zuki"
+    ],
+    "katas": [
+      {
+        "kata": "pinan-shodan",
+        "index": 5
+      }
+    ]
+  },
+  {
+    "id": "mae-geri",
+    "name": "Mae Geri",
+    "description": "Calcio frontale portato in avanti, generalmente diretto al tronco o agli arti inferiori.",
+    "categories": [
+      "geri"
+    ],
+    "katas": [
+      {
+        "kata": "pinan-shodan",
+        "index": 6
+      }
+    ]
+  },
+  {
+    "id": "yoko-uke",
+    "name": "Yoko Uke",
+    "description": "Parata laterale utilizzata per deviare attacchi provenienti di lato.",
+    "categories": [
+      "uke"
+    ],
+    "katas": [
+      {
+        "kata": "pinan-shodan",
+        "index": 7
+      }
+    ]
+  },
+  {
+    "id": "kentsui-uke",
+    "name": "Kentsui Uke",
+    "description": "Tecnica difensiva eseguita con il pugno a martello per intercettare o deviare un attacco.",
+    "image": "images/kentsui-uke.jpg",
+    "categories": [
+      "uke"
+    ],
+    "katas": [
+      {
+        "kata": "pinan-shodan",
+        "index": 9
+      }
+    ]
+  },
+  {
+    "id": "yoko-barai",
+    "name": "Yoko Barai",
+    "description": "Parata spazzata laterale per allontanare o deviare un attacco.",
+    "image": "images/yoko-barai.jpg",
+    "categories": [
+      "uchi"
+    ],
+    "katas": [
+      {
+        "kata": "pinan-shodan",
+        "index": 10
+      }
+    ]
+  },
+  {
+    "id": "kosa-uke",
+    "name": "Kosa Uke",
+    "description": "Parata incrociata eseguita con entrambe le braccia per intercettare o bloccare un attacco.",
+    "categories": [
+      "uke"
+    ],
+    "katas": [
+      {
+        "kata": "pinan-shodan",
+        "index": 8
+      }
+    ]
+  }
+]

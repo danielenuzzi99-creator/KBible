@@ -1,0 +1,22 @@
+[
+  {
+    "id": "zuki",
+    "name": "Zuki (Attacchi)",
+    "description": "Zuki (Attacchi)"
+  },
+  {
+    "id": "uke",
+    "name": "Uke (Parate)",
+    "description": "Uke (Parate)"
+  },
+  {
+    "id": "geri",
+    "name": "Geri (Calci)",
+    "description": "Geri (Calci)"
+  },
+  {
+    "id": "uchi",
+    "name": "Uchi (Percosse)",
+    "description": "Uchi (Percosse)"
+  }
+]

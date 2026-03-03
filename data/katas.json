@@ -1,0 +1,27 @@
+[
+  {
+    "id": "pinan-shodan",
+    "name": "Pinan Shodan",
+    "description": "Primo shito-ryu kata"
+  },
+  {
+    "id": "pinan-nidan",
+    "name": "Pinan Nidan",
+    "description": "Secondo shito-ryu kata"
+  },
+  {
+    "id": "pinan-sandan",
+    "name": "Pinan Sandan",
+    "description": "Terzo shito-ryu kata"
+  },
+  {
+    "id": "pinan-yondan",
+    "name": "Pinan Yondan",
+    "description": "Quarto shito-ryu kata"
+  },
+  {
+    "id": "pinan-godan",
+    "name": "Pinan Godan",
+    "description": "Quinto shito-ryu kata"
+  }
+]
