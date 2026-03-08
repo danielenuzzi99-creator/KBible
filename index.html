@@ -1,60 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 
 <head>
   <meta charset="UTF-8" />
-  <title>Catalog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shiro Ryu Karate Catalog</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400&display=swap"
+    rel="stylesheet">
+
+  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <script defer src="js/app.js"></script>
-  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['Cormorant Garamond', 'serif'],
+            sans: ['Montserrat', 'sans-serif'],
+          },
+          colors: {
+            paper: '#f4efe6',
+            accent: '#7b2c2c',
+          }
+        }
+      }
+    }
+  </script>
 </head>
 
-<body class="bg-gray-100 p-6">
+<body class="font-sans text-neutral-800">
 
-  <div x-data="catalogApp" x-init="init()" class="max-w-6xl mx-auto">
+  <!-- HERO SECTION -->
+  <section class="relative h-screen w-full bg-cover bg-center flex flex-col"
+    style="background-image: url('/images/assets/home-bg.png');">
 
-    <!-- Search -->
-    <input type="text" x-model="search" placeholder="Search..." class="w-full p-2 mb-4 border rounded" />
+    <!-- Overlay effetto carta -->
+    <!-- <div class="absolute inset-0 bg-paper/80 backdrop-blur-[1px]"></div> -->
 
-    <!-- Filters -->
-    <div class="grid md:grid-cols-2 gap-4 mb-6">
+    <!-- NAVBAR -->
+    <header class="relative z-10 flex justify-between items-center px-16 py-8">
 
-      <!-- Categories (AND logic) -->
-      <div>
-        <h3 class="font-semibold mb-2">Categories</h3>
-        <template x-for="cat in allCategories" :key="cat.id">
-          <label class="flex items-center space-x-2">
-            <input type="checkbox" :value="cat.id" x-model="selectedCategories">
-            <span x-text="cat.name"></span>
-          </label>
-        </template>
+      <!-- Logo -->
+      <div class="flex items-center gap-6">
+        <span class="font-serif text-2xl border-2 border-accent px-4 py-2 rounded-full">
+          白竜
+        </span>
+        <span class="font-serif text-3xl tracking-wide">
+          CATALOGO SHIRO RYU KARATE
+        </span>
       </div>
 
-      <!-- Katas (OR logic) -->
-      <div>
-        <h3 class="font-semibold mb-2">Katas</h3>
-        <template x-for="kata in allKatas" :key="kata.id">
-          <label class="flex items-center space-x-2">
-            <input type="checkbox" :value="kata.id" x-model="selectedKatas">
-            <span x-text="kata.name"></span>
-          </label>
-        </template>
+      <!-- Menu -->
+      <nav>
+        <ul class="flex gap-10 text-sm tracking-widest font-light">
+          <li><a href="./index.html" class="hover:opacity-60 transition">HOME</a></li>
+          <li><a href="./techniques.html" class="hover:opacity-60 transition">KATA</a></li>
+          <li><a href="./techniques.html" class="hover:opacity-60 transition">TECNICHE</a></li>
+          <li><a href="#" class="hover:opacity-60 transition">STORIA</a></li>
+          <li><a href="#" class="hover:opacity-60 transition">CHI SIAMO</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <!-- HERO CONTENT -->
+    <div class="relative z-10 flex-1 flex items-end justify-center text-center px-6 pb-10">
+      <div class="max-w-3xl">
+
+        <h4 class="font-serif text-3xl md:text-5xl font-medium mb-3">
+          Esplora l’essenza dello Shiro Ryu Karate
+        </h4>
+
+        <p class="font-light text-lg md:text-xl leading-relaxed mb-3 max-w-3xl mx-auto">
+          Una risorsa digitale dedicata alle tecniche autentiche, ai kata e al patrimonio 
+          dello Shiro Ryu Karate. Scopri kata raffinati e movimenti fondamentali.
+        </p>
+
+        <a href="#" class="font-serif text-2xl tracking-wider text-accent relative inline-block group">
+          Esplora i Kata
+          <span class="absolute left-0 -bottom-1 w-full h-px bg-accent 
+                   transform origin-left transition duration-300
+                   group-hover:scale-x-60"></span>
+        </a>
+        
       </div>
-
     </div>
 
-    <!-- Grid -->
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-      <template x-for="item in filteredItems" :key="item.name">
-        <div class="bg-white p-4 rounded shadow">
-          <img :src="item.image" loading="lazy" class="mb-2">
-          <h2 class="font-bold" x-text="item.name"></h2>
-          <p class="text-sm text-gray-600" x-text="item.description"></p>
-        </div>
-      </template>
-    </div>
-
-  </div>
+  </section>
 
 </body>
 

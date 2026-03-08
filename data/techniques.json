@@ -3,7 +3,7 @@
     "id": "kentsui-uchi",
     "name": "Kentsui Uchi",
     "description": "Colpo discendente eseguito con il pugno a martello.",
-    "image": "images/kentsui-uchi.png",
+    "image": "kentsui-uchi.png",
     "categories": [
       "uke"
     ],
@@ -60,7 +60,7 @@
     "id": "shuto-barai",
     "name": "Shuto Barai",
     "description": "Parata spazzata eseguita con la mano a taglio per deviare lateralmente l’attacco.",
-    "image": "images/shuto-barai.png",
+    "image": "shuto-barai.png",
     "categories": [
       "uke"
     ],
@@ -131,7 +131,7 @@
     "id": "kentsui-uke",
     "name": "Kentsui Uke",
     "description": "Tecnica difensiva eseguita con il pugno a martello per intercettare o deviare un attacco.",
-    "image": "images/kentsui-uke.jpg",
+    "image": "kentsui-uke.jpg",
     "categories": [
       "uke"
     ],
@@ -146,7 +146,7 @@
     "id": "yoko-barai",
     "name": "Yoko Barai",
     "description": "Parata spazzata laterale per allontanare o deviare un attacco.",
-    "image": "images/yoko-barai.jpg",
+    "image": "yoko-barai.jpg",
     "categories": [
       "uchi"
     ],
